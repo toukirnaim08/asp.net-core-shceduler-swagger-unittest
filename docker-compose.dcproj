@@ -3,10 +3,10 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
-    <ProjectGuid>{C8440622-73BE-48FA-A05A-E178AE890E18}</ProjectGuid>
+    <ProjectGuid>{98ED4FEA-BB5D-46DD-B5D5-4507F0240192}</ProjectGuid>
     <DockerLaunchBrowser>True</DockerLaunchBrowser>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}</DockerServiceUrl>
-    <DockerServiceName>asp.net-core-shceduler-swagger-unittest-</DockerServiceName>
+    <DockerServiceName>asp.net-core-shceduler-swagger-unittest</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.override.yml">

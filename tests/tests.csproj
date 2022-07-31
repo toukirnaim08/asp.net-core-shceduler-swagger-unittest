@@ -38,6 +38,6 @@
     <Folder Include="ResponseJSON\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\asp.net-core-shceduler-swagger-unittest-\asp.net-core-shceduler-swagger-unittest-.csproj" />
+    <ProjectReference Include="..\asp.net-core-shceduler-swagger-unittest\asp.net-core-shceduler-swagger-unittest.csproj" />
   </ItemGroup>
 </Project>

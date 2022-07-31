@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "asp.net_core_shceduler_swagger_unittest_": {
+    "asp.net_core_shceduler_swagger_unittest": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

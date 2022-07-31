@@ -1,8 +1,8 @@
 version: '3.4'
 
 services:
-  asp.net-core-shceduler-swagger-unittest-:
+  asp.net-core-shceduler-swagger-unittest:
     image: ${DOCKER_REGISTRY-}asp
     build:
       context: .
-      dockerfile: asp.net-core-shceduler-swagger-unittest-/Dockerfile
+      dockerfile: asp.net-core-shceduler-swagger-unittest/Dockerfile
