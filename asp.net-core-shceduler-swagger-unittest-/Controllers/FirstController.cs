@@ -7,6 +7,7 @@ using System.Net.Http;
 using System.Web;
 using Microsoft.AspNetCore.Mvc;
 using asp.net_core_shceduler_swagger_unittest_.Services;
+using asp.net_core_shceduler_swagger_unittest_.Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -15,26 +16,35 @@ namespace asp.net_core_shceduler_swagger_unittest_.Controllers
 	[Route("[controller]/[action]")]
 	public class FirstController : Controller
 	{
-        IHttpProvider _httpProvider;
+        IStatusService _statusService;
 
-        public FirstController(IHttpProvider httpProvider)
+        public FirstController(IStatusService statusService)
 		{
-            _httpProvider = httpProvider;
+            _statusService = statusService;
         }
 
         // GET: api/values
+        //      [HttpGet]
+        //public String getName()
+        //{
+        //          return "testing";
+        //}
+
         [HttpGet]
-		public String getName()
-		{
-            return "testing";
-		}
+        public async Task<String> getStatus2()
+        {
+            var response = await _statusService.getStatus2();
+
+            return response;
+
+        }
 
         [HttpGet]
         public async Task<String> getStatus()
         {
-            var response = await _httpProvider.GetAsync("https://api.tzstats.com/explorer/status");
-            var result = response.Content.ReadAsStringAsync().Result;
-            return result.ToString();
+            var response = await _statusService.getStatus();
+
+            return response;
 
         }
     }

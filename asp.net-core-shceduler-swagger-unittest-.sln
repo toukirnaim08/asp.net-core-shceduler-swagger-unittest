@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "asp.net-core-shceduler-swag
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tests", "tests\tests.csproj", "{576DFC1A-A27D-43E3-83E4-CC8F43999D94}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{C8440622-73BE-48FA-A05A-E178AE890E18}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{576DFC1A-A27D-43E3-83E4-CC8F43999D94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{576DFC1A-A27D-43E3-83E4-CC8F43999D94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{576DFC1A-A27D-43E3-83E4-CC8F43999D94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8440622-73BE-48FA-A05A-E178AE890E18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8440622-73BE-48FA-A05A-E178AE890E18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8440622-73BE-48FA-A05A-E178AE890E18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8440622-73BE-48FA-A05A-E178AE890E18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -5,6 +5,8 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>asp.net_core_shceduler_swagger_unittest_</RootNamespace>
+    <DockerComposeProjectPath>../docker-compose.dcproj</DockerComposeProjectPath>
+    <UserSecretsId>6804f6a1-2a38-4faf-911f-f8d478bd81de</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

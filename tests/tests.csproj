@@ -9,9 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.2.0" />
     <PackageReference Include="xunit" Version="2.4.1" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
@@ -20,14 +20,22 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="RichardSzalay.MockHttp" Version="6.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Remote.Linq.Newtonsoft.Json" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove="Controllers\" />
     <None Remove="RichardSzalay.MockHttp" />
+    <None Remove="MockService\" />
+    <None Remove="ResponseJSON\" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="Remote.Linq.Newtonsoft.Json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="MockService\" />
+    <Folder Include="ResponseJSON\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\asp.net-core-shceduler-swagger-unittest-\asp.net-core-shceduler-swagger-unittest-.csproj" />

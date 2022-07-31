@@ -1,6 +1,11 @@
+using asp.net_core_shceduler_swagger_unittest_;
+using asp.net_core_shceduler_swagger_unittest_.Models;
 using asp.net_core_shceduler_swagger_unittest_.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+
+//builder.Configuration.GetSection("Settings").Get<Configs>();
+Configs.StatusURL = builder.Configuration.GetValue<string>("StatusURL");
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -8,8 +13,8 @@ builder.Services.AddControllersWithViews();
 // swagger
 builder.Services.AddSwaggerGen();
 
-//builder.Services.Add(new ServiceDescriptor(typeof(IHttpProvider), new HttpProvider()));
 builder.Services.AddSingleton<IHttpProvider, HttpProvider>();
+builder.Services.AddSingleton<IStatusService, StatusService>();
 
 var app = builder.Build();
 
