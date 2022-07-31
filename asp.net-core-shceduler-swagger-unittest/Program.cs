@@ -1,6 +1,6 @@
-using asp.net_core_shceduler_swagger_unittest_;
-using asp.net_core_shceduler_swagger_unittest_.Models;
-using asp.net_core_shceduler_swagger_unittest_.Services;
+using asp.net_core_shceduler_swagger_unittest;
+using asp.net_core_shceduler_swagger_unittest.Models;
+using asp.net_core_shceduler_swagger_unittest.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

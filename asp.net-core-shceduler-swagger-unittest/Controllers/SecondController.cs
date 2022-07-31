@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace asp.net_core_shceduler_swagger_unittest_.Controllers
+namespace asp.net_core_shceduler_swagger_unittest.Controllers
 {
 	[Route("[controller]/[action]")]
 	public class SecondController : Controller

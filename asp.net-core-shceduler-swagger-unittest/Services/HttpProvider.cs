@@ -1,6 +1,6 @@
 using System;
 
-namespace asp.net_core_shceduler_swagger_unittest_.Services
+namespace asp.net_core_shceduler_swagger_unittest.Services
 {
 	public class HttpProvider : IHttpProvider
 	{

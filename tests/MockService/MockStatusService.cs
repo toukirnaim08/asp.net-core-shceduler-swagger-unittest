@@ -1,5 +1,5 @@
-using asp.net_core_shceduler_swagger_unittest_.Models;
-using asp.net_core_shceduler_swagger_unittest_.Services;
+using asp.net_core_shceduler_swagger_unittest.Models;
+using asp.net_core_shceduler_swagger_unittest.Services;
 
 namespace tests.MockService
 {

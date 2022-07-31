@@ -1,8 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using asp.net_core_shceduler_swagger_unittest_.Models;
+using asp.net_core_shceduler_swagger_unittest.Models;
 
-namespace asp.net_core_shceduler_swagger_unittest_.Controllers;
+namespace asp.net_core_shceduler_swagger_unittest.Controllers;
 
 public class HomeController : Controller
 {

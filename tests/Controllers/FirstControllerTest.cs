@@ -6,9 +6,9 @@ using RichardSzalay.MockHttp;
 using tests;
 using tests.MockService;
 
-using asp.net_core_shceduler_swagger_unittest_.Controllers;
-using asp.net_core_shceduler_swagger_unittest_.Services;
-using asp.net_core_shceduler_swagger_unittest_.Models;
+using asp.net_core_shceduler_swagger_unittest.Controllers;
+using asp.net_core_shceduler_swagger_unittest.Services;
+using asp.net_core_shceduler_swagger_unittest.Models;
 
 namespace tests.Controllers
 {
