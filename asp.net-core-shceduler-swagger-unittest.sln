@@ -10,6 +10,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A6E08CDA-8CB5-453C-AAFC-BC0A4DF01772}"
 	ProjectSection(SolutionItems) = preProject
 		run_docker_bash.sh = run_docker_bash.sh
+		run_all_test.sh = run_all_test.sh
 	EndProjectSection
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{98ED4FEA-BB5D-46DD-B5D5-4507F0240192}"

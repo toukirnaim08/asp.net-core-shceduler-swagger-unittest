@@ -22,6 +22,7 @@
     <PackageReference Include="RichardSzalay.MockHttp" Version="6.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="Remote.Linq.Newtonsoft.Json" Version="7.0.0" />
+    <PackageReference Include="XunitXml.TestLogger" Version="3.0.70" />
   </ItemGroup>
 
   <ItemGroup>
@@ -31,6 +32,7 @@
     <None Remove="ResponseJSON\" />
     <None Remove="Newtonsoft.Json" />
     <None Remove="Remote.Linq.Newtonsoft.Json" />
+    <None Remove="XunitXml.TestLogger" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
