@@ -3,21 +3,20 @@ using asp.net_core_shceduler_swagger_unittest.Services;
 
 namespace tests.MockService
 {
-	public class MockStatusService
+	public class MockTzStatsService
 	{
 		Dictionary<string, string> responseList = new Dictionary<string, string>(2);
 
-		public MockStatusService()
+		public MockTzStatsService()
 		{
-			responseList.Add(Configs.StatusURL, "temp1");
-			responseList.Add("https://api.temps.com/explorer/status", "temp2");
+			responseList.Add(Configs.TzStatsTickers, "temp1");
+			responseList.Add(Configs.TzStatsStatus, "temp1");
 		}
 
-		public StatusService getService()
+		public TzStatService getService()
 		{
 			HttpProvider httpProvider = TestHelper.createMocks(responseList);
-			return new StatusService(httpProvider);
-
+			return new TzStatService(httpProvider);
 		}
 	}
 }

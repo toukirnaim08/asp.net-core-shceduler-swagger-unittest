@@ -1,11 +1,15 @@
+using Microsoft.EntityFrameworkCore;
+
 using asp.net_core_shceduler_swagger_unittest;
+using asp.net_core_shceduler_swagger_unittest.Data;
 using asp.net_core_shceduler_swagger_unittest.Models;
 using asp.net_core_shceduler_swagger_unittest.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//builder.Configuration.GetSection("Settings").Get<Configs>();
-Configs.StatusURL = builder.Configuration.GetValue<string>("StatusURL");
+// Set Configs
+Configs.TzStatsStatus = builder.Configuration.GetValue<string>("TzStatsStatus");
+Configs.TzStatsTickers = builder.Configuration.GetValue<string>("TzStatsTickers");
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -14,7 +18,12 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddSingleton<IHttpProvider, HttpProvider>();
-builder.Services.AddSingleton<IStatusService, StatusService>();
+builder.Services.AddSingleton<ITzStatService, TzStatService>();
+
+builder.Services.AddDbContext<ExtendedDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DbConnection"));
+});
 
 var app = builder.Build();
 

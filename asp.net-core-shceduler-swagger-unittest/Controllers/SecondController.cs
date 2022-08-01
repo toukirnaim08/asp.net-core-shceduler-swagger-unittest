@@ -13,9 +13,9 @@ namespace asp.net_core_shceduler_swagger_unittest.Controllers
 	{
 		// GET: api/values
 		[HttpGet]
-		public String getName()
+		public String get_name()
 		{
-			return "testing";
+			return "TzStats";
 		}
 	}
 }

@@ -7,8 +7,6 @@ using tests;
 using tests.MockService;
 
 using asp.net_core_shceduler_swagger_unittest.Controllers;
-using asp.net_core_shceduler_swagger_unittest.Services;
-using asp.net_core_shceduler_swagger_unittest.Models;
 
 namespace tests.Controllers
 {
@@ -19,29 +17,20 @@ namespace tests.Controllers
         public FirstControllerTest()
         {
             TestHelper.setConfigs();
-            MockStatusService statusService = new MockStatusService();
-            firstController = new FirstController(statusService.getService());
-        }
-
-        //[Fact]
-        //public void GetName()
-        //{
-        //    var result = firstController.getName();
-        //    // Assert the result  
-        //    String responseContext = "testing";
-        //    Assert.True(result.Equals(responseContext));
-        //}
-
-        [Fact]
-        public async Task getStatus2()
-        {
-            var response = await firstController.getStatus2();
+            MockTzStatsService tzStatsService = new MockTzStatsService();
+            firstController = new FirstController(tzStatsService.getService());
         }
 
         [Fact]
-        public async Task getStatus()
+        public async Task get_tickers()
         {
-            var response = await firstController.getStatus();
+            var response = await firstController.get_tickers();
+        }
+
+        [Fact]
+        public async Task get_staus()
+        {
+            var response = await firstController.get_staus();
         }
     }
 }

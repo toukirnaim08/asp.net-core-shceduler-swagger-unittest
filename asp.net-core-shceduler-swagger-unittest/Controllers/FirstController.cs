@@ -16,33 +16,26 @@ namespace asp.net_core_shceduler_swagger_unittest.Controllers
 	[Route("[controller]/[action]")]
 	public class FirstController : Controller
 	{
-        IStatusService _statusService;
+        ITzStatService _tzStatService;
 
-        public FirstController(IStatusService statusService)
+        public FirstController(ITzStatService tzStatService)
 		{
-            _statusService = statusService;
+            _tzStatService = tzStatService;
         }
 
-        // GET: api/values
-        //      [HttpGet]
-        //public String getName()
-        //{
-        //          return "testing";
-        //}
-
         [HttpGet]
-        public async Task<String> getStatus2()
+        public async Task<String> get_tickers()
         {
-            var response = await _statusService.getStatus2();
+            var response = await _tzStatService.get_tickers();
 
             return response;
 
         }
 
         [HttpGet]
-        public async Task<String> getStatus()
+        public async Task<String> get_staus()
         {
-            var response = await _statusService.getStatus();
+            var response = await _tzStatService.get_staus();
 
             return response;
 

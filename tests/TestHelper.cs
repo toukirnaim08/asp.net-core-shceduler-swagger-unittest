@@ -11,7 +11,8 @@ namespace tests
 	{
 		public static void setConfigs()
 		{
-			Configs.StatusURL = "https://api.tzstats.com/explorer/status";
+			Configs.TzStatsStatus = "https://api.tzstats.com/explorer/status";
+			Configs.TzStatsTickers = "https://api.tzstats.com/markets/tickers";
 		}
 
 		public static HttpProvider createMocks(Dictionary<string, string> responseList)

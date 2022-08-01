@@ -4,26 +4,26 @@ using asp.net_core_shceduler_swagger_unittest.Models;
 
 namespace asp.net_core_shceduler_swagger_unittest.Services
 {
-	public class StatusService : IStatusService
+	public class TzStatService : ITzStatService
 	{
 		IHttpProvider _httpProvider;
 
-		public StatusService(IHttpProvider httpProvider)
+		public TzStatService(IHttpProvider httpProvider)
 		{
 			_httpProvider = httpProvider;
 		}
 
-		public async Task<String> getStatus()
+		public async Task<String> get_tickers()
 		{
-			var response = await _httpProvider.GetAsync(Configs.StatusURL);
+			var response = await _httpProvider.GetAsync(Configs.TzStatsTickers);
 			var result = response.Content.ReadAsStringAsync().Result;
 			return result.ToString();
 
 		}
 
-		public async Task<String> getStatus2()
+		public async Task<String> get_staus()
 		{
-			var response = await _httpProvider.GetAsync("https://api.temps.com/explorer/status");
+			var response = await _httpProvider.GetAsync(Configs.TzStatsStatus);
 			var result = response.Content.ReadAsStringAsync().Result;
 			return result.ToString();
 
